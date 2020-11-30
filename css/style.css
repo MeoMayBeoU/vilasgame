@@ -164,7 +164,7 @@ header {
 	
 }
 
-#navbarSupportedContent {
+.collapse.navbar-collapse {
 	padding-right: 49px;
 	padding-left: 50px;
 }
@@ -175,21 +175,26 @@ header {
 	height: 40px;
 	border: 1px solid red;
 	border-radius: 30px;
+
 }
 .form-inline.my-2.my-lg-0 {
 	width: 450px;
 	height: 40px;
+	position: relative;
 }
 
 .btn.btn-outline-success.my-2.my-sm-0 {
-	position: absolute;
-	left: 560px;
-	height: 40px;
-	width: 10%;
-	border-radius: 0px 30px 30px 30px;
-	border: 1px solid red;
-	background-color: red;
-	color: aliceblue;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+    bottom: 0;
+    border-radius: 0px 30px 30px 30px;
+    border: 1px solid red;
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+    line-height: 0px;
+    width: 100px;
 }
 .login {	
 
@@ -242,10 +247,10 @@ main {
     padding-top: 60px;
 }
 .sub-group {
-    padding: 5px;
+    padding: 20px 20px 20px 20px;
     border: 1px solid;
     border-radius: 30px;
-
+    height : 500px;
     background-color: #e2e2e2;
 }
 
@@ -269,11 +274,133 @@ main {
     text-align: left;
     padding: 10px;
     border-bottom: 1px solid #000;
-}
-.number {
-    float: right;
+    font-size: 17px;
+    font-weight: 700;
+
 }
 
+.number {
+    float: right;
+     background-color: aliceblue;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.btn.view_more {
+
+    text-align: center;
+    border: 0px !important;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+.main-background-bottom {
+	margin-top:80px;
+	background-image: url('../images/background.jpg');
+	height:800px;
+}
+.title-main-background {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 700;
+    color: aliceblue;
+}
+.content-main-background {
+
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 700;
+}
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.content-main-background {
+    text-align: center;
+}	
+
+.row.image-aboutus {
+    padding-top: 70px;
+    text-align: center;
+}
+.img-responsive.image-background {
+    border-radius: 0px 30px;
+}
+.btn.btn-primary {
+    text-align: center;
+    width: 150px;
+    background-color: #ae120a;
+    border: 0px;
+    border-radius: 0px 20px;
+}
+
+.sub_group {
+    border: 1px solid red;
+
+    border-radius: 30px;
+}
+
+
+
+
+
+.btn.btn-primary.button-sub {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    right: 15px;
+    display: flex;
+    width: 140px;
+}
+.fllow-button {
+    padding-top: 80px;
+}
+.title.follow {
+    font-size: 20px;
+    font-weight: 700;
+        padding-left: 80px;
+    padding-top: 5px;
+}
+.fab.fa-facebook-square.fa_icon {
+    position: absolute;
+    left: 30px;
+    font-size: 50px;
+    top: 20%;
+}
+.info.follow {
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 70px;
+}
+
+
+
+footer {
+	background-color:#202020;
+}
+.img-responsive.logo-footer {
+    width: 15%;
+    padding-top: 40px;
+    height: auto;
+}
+
+.col-xs-3.col-sm-3.col-md-3.col-lg-3.content-footer {
+    padding-top: 30px;
+}
+.content-footer {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 700;
+}
+.title-footer {
+    font-size: 20px;
+    font-weight: 700;
+    color: aliceblue;
+}
+.category-footer {
+    color: aliceblue;
+}
+.info-footer {
+    padding-top: 6px;
+    color: aliceblue;
+    font-weight: 700;
+}
 
 footer .sub_footer_socialite .gr_sub ul.sub-share{
 	display: inline-block;
@@ -308,16 +435,6 @@ footer .sub_footer_socialite .gr_sub ul.sub-share li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* lg */ 
 @media (min-width: 1331px) {
 }
@@ -329,8 +446,6 @@ footer .sub_footer_socialite .gr_sub ul.sub-share li a:hover{
 
 /* md */
 @media (max-width: 991px) {
-
-
 }
 
 /* sm */
@@ -343,6 +458,7 @@ footer .sub_footer_socialite .gr_sub ul.sub-share li a:hover{
 
 @media (max-width: 440px){
 }
+
 @media (max-width: 340px){
 }
 
